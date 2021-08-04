@@ -1,0 +1,127 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.wrapper {
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.container {
+    color: hsla(0, 0%, 100%, 0.75);
+    display: flex;
+    justify-content: center;
+}
+section {
+    display: block;
+}
+img {
+    margin-bottom: 30px;
+}
+.box {
+    padding: 45px;
+    min-height: 400px;
+}
+.orange {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.dark-cyan {
+    background-color: hsl(184, 100%, 22%);
+}
+.very-dark-cyan {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 40px;
+}
+p { 
+    margin-top: 25px;
+    margin-bottom: 65px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.learn-button {
+    padding: 10px 30px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.orange > .learn-button {
+    color: hsl(31, 77%, 52%);  
+}
+
+.orange > .learn-button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: solid 2px hsla(0, 0%, 100%, 0.75);
+    cursor: pointer;
+}
+.dark-cyan > .learn-button {
+    color: hsl(184, 100%, 22%);
+}
+
+.dark-cyan > .learn-button:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: solid 2px hsla(0, 0%, 100%, 0.75);
+    cursor: pointer;
+}
+
+.very-dark-cyan > .learn-button {
+    color: hsl(179, 100%, 13%);
+}
+
+.very-dark-cyan > .learn-button:hover {
+    background-color:  hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: solid 2px hsla(0, 0%, 100%, 0.75);
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .wrapper {
+        height: unset;
+        padding-top: 5px;
+    }
+    .container {
+        height: unset;
+        min-width: unset;
+        width: 90vw;
+        max-width: 340px;
+        flex-direction: column;
+    }
+    .orange {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .very-dark-cyan {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
