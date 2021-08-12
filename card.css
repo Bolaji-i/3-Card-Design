@@ -8,12 +8,15 @@ body {
 }
 
 .wrapper {
-    height: 740px;
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-top: 5px;
+    width: 100%;
+    height: 100vh;
 }
 
 .container {
